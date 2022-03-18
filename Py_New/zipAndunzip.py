@@ -45,3 +45,35 @@
 # b = 2
 # print(eval('a * b',{'a':a,'b':b}))
 # # 10
+
+######################################################################
+################ MEMORYVIEW FUNCTION #################################
+
+# x = b'hello world'
+# print(type(x))
+
+# new = memoryview(x)
+# print(type(new))
+# print(new)
+
+# printing the original data
+
+# print(new.obj)
+
+# ASCII values of the bytes object that we created
+
+# print(new.tolist())
+
+
+z = bytearray('python is crazzy','utf-8')
+print(type(z))
+
+y = memoryview(z)
+print(y)
+# memory location
+
+print(y[2])
+# ASCII code
+
+print(chr(y[2]))
+# specific character at that index
